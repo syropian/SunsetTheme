@@ -1,0 +1,17 @@
+﻿Title: Sunset Theme
+
+----
+
+Author: Collin Henderson
+
+----
+
+Description: A free theme for Kirby.
+
+----
+
+Keywords: sunset, simple, clean, orange
+
+----
+
+Copyright: © (date: Year) (link: http://syropia.net text: Syropia.net)

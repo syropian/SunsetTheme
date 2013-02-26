@@ -1,0 +1,358 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialised;
+}
+
+/* line 22, ../sass/screen.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: block;
+}
+
+/* line 27, ../sass/screen.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 31, ../sass/screen.scss */
+em {
+  font-style: italic;
+}
+
+/* line 35, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 39, ../sass/screen.scss */
+body {
+  background: #f3f3f3;
+}
+
+/* line 43, ../sass/screen.scss */
+#header {
+  display: block;
+  height: 180px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fc8a5f), color-stop(100%, #fabd65));
+  background-image: -webkit-linear-gradient(#fc8a5f, #fabd65);
+  background-image: -moz-linear-gradient(#fc8a5f, #fabd65);
+  background-image: -o-linear-gradient(#fc8a5f, #fabd65);
+  background-image: linear-gradient(#fc8a5f, #fabd65);
+}
+/* line 48, ../sass/screen.scss */
+#header #header-container {
+  width: 860px;
+  margin: 0 auto;
+}
+/* line 51, ../sass/screen.scss */
+#header #header-container h1 {
+  float: left;
+  display: inline-block;
+  font-family: 'Satisfy';
+  font-size: 48px;
+  position: relative;
+  top: 40px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+/* line 60, ../sass/screen.scss */
+#header #header-container h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 65, ../sass/screen.scss */
+#header #header-container #nav {
+  float: right;
+  position: relative;
+  top: 58px;
+}
+/* line 69, ../sass/screen.scss */
+#header #header-container #nav li {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+/* line 76, ../sass/screen.scss */
+#header #header-container #nav li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 1px 0 #fc6634;
+  -webkit-transition-duration: 700ms;
+  -moz-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+}
+/* line 82, ../sass/screen.scss */
+#header #header-container #nav li a:hover {
+  text-shadow: 0 1px 0 #fc6634, 0 0 8px #fff7cb;
+}
+
+/* line 91, ../sass/screen.scss */
+#content {
+  width: 860px;
+  margin: 0 auto;
+  background: #f8f8f8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: relative;
+  top: -46px;
+}
+/* line 100, ../sass/screen.scss */
+#content #posts {
+  width: 700px;
+  margin: 0 auto;
+}
+/* line 103, ../sass/screen.scss */
+#content #posts .post {
+  margin-bottom: 50px;
+}
+/* line 105, ../sass/screen.scss */
+#content #posts .post h3.post-title {
+  text-align: center;
+  font-family: "Lusitana", "Times", serif;
+  font-size: 30px;
+  color: #444444;
+}
+/* line 110, ../sass/screen.scss */
+#content #posts .post h3.post-title a {
+  color: #444444;
+  text-decoration: none;
+  -webkit-transition-duration: 700ms;
+  -moz-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+}
+/* line 114, ../sass/screen.scss */
+#content #posts .post h3.post-title a:hover {
+  color: #fb8b5f;
+}
+/* line 119, ../sass/screen.scss */
+#content #posts .post div.post-meta {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.9em;
+  text-transform: uppercase;
+  color: #d0d0d0;
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+  border-bottom: 1px solid #b7b7b7;
+  padding-bottom: 20px;
+}
+/* line 132, ../sass/screen.scss */
+#content #posts .post p {
+  font-family: "Fenix", "Times", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6a6a6a;
+  margin: 20px 0;
+}
+/* line 138, ../sass/screen.scss */
+#content #posts .post p a {
+  color: #fb8b5f;
+}
+/* line 140, ../sass/screen.scss */
+#content #posts .post p a:hover {
+  text-decoration: none;
+}
+/* line 145, ../sass/screen.scss */
+#content #posts .post p img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 149, ../sass/screen.scss */
+#content #posts .post p .right {
+  float: right;
+  margin-left: 20px;
+}
+/* line 154, ../sass/screen.scss */
+#content #posts .post p .left {
+  float: left;
+  margin-right: 20px;
+}
+/* line 159, ../sass/screen.scss */
+#content #posts .post p .left, #content #posts .post p .right {
+  border: 3px solid white;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+/* line 165, ../sass/screen.scss */
+#content #posts .post blockquote {
+  border-left: 3px solid #d0d0d0;
+  padding-left: 20px;
+  color: #d0d0d0;
+}
+/* line 171, ../sass/screen.scss */
+#content #posts .post ul, #content #posts .post ol {
+  font-family: "Fenix", "Times", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6a6a6a;
+  margin: 20px 0;
+  margin-left: 40px;
+}
+/* line 179, ../sass/screen.scss */
+#content #posts .post ul {
+  list-style-type: square;
+}
+/* line 182, ../sass/screen.scss */
+#content #posts .post ol {
+  list-style-type: decimal;
+}
+/* line 186, ../sass/screen.scss */
+#content #posts .post h1, #content #posts .post h2, #content #posts .post h3, #content #posts .post h4, #content #posts .post h5 {
+  font-family: "Lusitana", "Times", serif;
+  margin: 20px 0;
+}
+/* line 190, ../sass/screen.scss */
+#content #posts .post h1 {
+  font-size: 48px;
+}
+/* line 191, ../sass/screen.scss */
+#content #posts .post h2 {
+  font-size: 36px;
+}
+/* line 192, ../sass/screen.scss */
+#content #posts .post h3 {
+  font-size: 32px;
+}
+/* line 193, ../sass/screen.scss */
+#content #posts .post h4 {
+  font-size: 28px;
+}
+/* line 194, ../sass/screen.scss */
+#content #posts .post h5 {
+  font-size: 24px;
+}
+/* line 196, ../sass/screen.scss */
+#content #posts .post div.read-more {
+  display: block;
+  border-top: 1px solid #aaaaaa;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-transition-duration: 700ms;
+  -moz-transition-duration: 700ms;
+  -o-transition-duration: 700ms;
+  transition-duration: 700ms;
+}
+/* line 202, ../sass/screen.scss */
+#content #posts .post div.read-more a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #9d9d9d;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  top: -9px;
+  background: #f8f8f8;
+  padding: 0 8px;
+}
+/* line 216, ../sass/screen.scss */
+#content #posts .post div.read-more:hover {
+  opacity: 1;
+}
+
+/* line 222, ../sass/screen.scss */
+#footer {
+  position: relative;
+  top: -26px;
+  width: 700px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #aaa;
+}
+/* line 234, ../sass/screen.scss */
+#footer a {
+  color: #999;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+/* line 238, ../sass/screen.scss */
+#footer a:hover {
+  border-bottom: 1px solid #999999;
+}

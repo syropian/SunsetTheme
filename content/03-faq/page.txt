@@ -1,0 +1,13 @@
+﻿Title: Docs
+
+----
+
+Body: ##### What Features Does This Theme Have?
+
+Here's a brief overview of the current state of this theme:
+
+- Responsive and Retina Ready
+- Configurable colours via Sass variables
+- Supports lots of text formatting like bold, italics, links, ordered and unordered lists, blockquotes and code blocks with **automatic syntax highlighting**.
+- Simple Pagination
+- RSS

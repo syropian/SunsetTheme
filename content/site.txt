@@ -14,4 +14,4 @@ Keywords: sunset, simple, clean, orange
 
 ----
 
-Copyright: © (date: Year) (link: http://syropia.net text: Syropia.net)
+Copyright: © (date: Year) (link: http://google.ca text: My Company). (link: feed text: Subscribe to RSS). Theme by (link: http://syropia.net text: Syropia)

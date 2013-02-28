@@ -178,18 +178,26 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
+#content #posts a {
+  color: #fb8b5f;
+}
+/* line 106, ../sass/screen.scss */
+#content #posts a:hover {
+  text-decoration: none;
+}
+/* line 111, ../sass/screen.scss */
 #content #posts .post {
   margin-bottom: 50px;
 }
-/* line 105, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #content #posts .post h3.post-title {
   text-align: center;
   font-family: "Lusitana", "Times", serif;
   font-size: 30px;
   color: #444444;
 }
-/* line 110, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #content #posts .post h3.post-title a {
   color: #444444;
   text-decoration: none;
@@ -198,11 +206,11 @@ body {
   -o-transition-duration: 700ms;
   transition-duration: 700ms;
 }
-/* line 114, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 #content #posts .post h3.post-title a:hover {
   color: #fb8b5f;
 }
-/* line 119, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #content #posts .post div.post-meta {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -217,54 +225,46 @@ body {
   border-bottom: 1px solid #b7b7b7;
   padding-bottom: 20px;
 }
-/* line 133, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 #content #posts .post p {
   font-family: "Fenix", "Times", serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 28px;
   color: #6a6a6a;
   margin: 20px 0;
 }
-/* line 139, ../sass/screen.scss */
-#content #posts .post p a {
-  color: #fb8b5f;
-}
-/* line 141, ../sass/screen.scss */
-#content #posts .post p a:hover {
-  text-decoration: none;
-}
-/* line 146, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #content #posts .post p img {
   max-width: 100%;
   height: auto;
 }
-/* line 150, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #content #posts .post p .right {
   float: right;
   margin-left: 20px;
 }
-/* line 155, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #content #posts .post p .left {
   float: left;
   margin-right: 20px;
 }
-/* line 160, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #content #posts .post p .left, #content #posts .post p .right {
   border: 3px solid white;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-/* line 166, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #content #posts .post blockquote {
   border-left: 3px solid #d0d0d0;
   padding-left: 20px;
 }
-/* line 169, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #content #posts .post blockquote > p {
   color: #848484;
 }
-/* line 174, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #content #posts .post ul, #content #posts .post ol {
   font-family: "Fenix", "Times", serif;
   font-size: 18px;
@@ -273,41 +273,45 @@ body {
   margin: 20px 0;
   margin-left: 40px;
 }
-/* line 182, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
+#content #posts .post ul li, #content #posts .post ol li {
+  margin: 10px 0;
+}
+/* line 187, ../sass/screen.scss */
 #content #posts .post ul {
   list-style-type: square;
 }
-/* line 185, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 #content #posts .post ol {
   list-style-type: decimal;
 }
-/* line 189, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 #content #posts .post h1, #content #posts .post h2, #content #posts .post h3, #content #posts .post h4, #content #posts .post h5 {
   font-family: "Lusitana", "Times", serif;
   margin: 20px 0;
   color: #5e5e5e;
 }
-/* line 194, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #content #posts .post h1 {
   font-size: 48px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #content #posts .post h2 {
   font-size: 36px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #content #posts .post h3 {
   font-size: 32px;
 }
-/* line 197, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #content #posts .post h4 {
   font-size: 28px;
 }
-/* line 198, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #content #posts .post h5 {
   font-size: 24px;
 }
-/* line 200, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #content #posts .post div.read-more {
   display: block;
   border-top: 1px solid #aaaaaa;
@@ -318,7 +322,7 @@ body {
   -o-transition-duration: 700ms;
   transition-duration: 700ms;
 }
-/* line 206, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 #content #posts .post div.read-more a {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -332,28 +336,20 @@ body {
   background: #f8f8f8;
   padding: 0 8px;
 }
-/* line 220, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #content #posts .post div.read-more:hover {
   opacity: 1;
 }
-/* line 224, ../sass/screen.scss */
-#content #posts .next, #content #posts .prev {
-  color: #fb8b5f;
-}
-/* line 226, ../sass/screen.scss */
-#content #posts .next:hover, #content #posts .prev:hover {
-  text-decoration: none;
-}
-/* line 231, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 #content #posts .next {
   float: right;
 }
-/* line 235, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 #content #posts .prev {
   float: left;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 #footer {
   position: relative;
   top: -26px;
@@ -369,39 +365,39 @@ body {
   text-align: center;
   color: #aaa;
 }
-/* line 255, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #footer a {
   color: #999;
   padding-bottom: 3px;
   text-decoration: none;
 }
-/* line 259, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #footer a:hover {
   border-bottom: 1px solid #999999;
 }
 
 @media only screen and (max-width: 517px) {
-  /* line 267, ../sass/screen.scss */
+  /* line 265, ../sass/screen.scss */
   #content {
     top: 0;
   }
 
-  /* line 268, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   #footer {
     top: 20px;
     padding-bottom: 20px;
   }
 
-  /* line 270, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   #header #header-container {
     text-align: center;
   }
-  /* line 272, ../sass/screen.scss */
+  /* line 270, ../sass/screen.scss */
   #header #header-container h1, #header #header-container #nav {
     float: none;
     display: block;
   }
-  /* line 277, ../sass/screen.scss */
+  /* line 275, ../sass/screen.scss */
   #header #header-container #nav li {
     margin: 0 10px !important;
   }

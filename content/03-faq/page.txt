@@ -6,8 +6,60 @@ Body: ##### What Features Does This Theme Have?
 
 Here's a brief overview of the current state of this theme:
 
+- Blog focused: Write beautiful blog posts, with an optional header image. 
 - Responsive and Retina Ready
 - Configurable colours via Sass variables
 - Supports lots of text formatting like bold, italics, links, ordered and unordered lists, blockquotes and code blocks with **automatic syntax highlighting**.
+- Floated images by applying **left** and **right** classes.
 - Simple Pagination
 - RSS
+- (link: http://getkirby.com/docs/panel text: Kirby Panel Integration)
+
+#### How Do I Install It?
+
+Installation is pretty straightforward. After downloading your copy of Kirby, you'll want to download this theme as well. Download it (link: https://github.com/hendo13/SunsetTheme text: here), or if you're comfortable with the command line, feel free to clone it.
+
+    $ git clone git@github.com:hendo13/SunsetTheme.git
+
+In your fresh Kirby install, replace the **assets**, **content**, and **sites** directory with the ones in the **SunsetTheme** folder.
+
+#### How Do I Include My Own Logo?
+
+Replace the file **logo@2x.png** located in **assets/img** with your own logo. Now navigate to **site/snippets/header.php** and look around line 26. It should look something like this:
+    
+    <h1><a href="/"><img src="/assets/img/logo@2x.png" width="307" height="69" alt="<?=$site->title()?>"></a></h1>
+
+Replace the value of the **src** attribute with your own image. If you want it retina-ready set the width and height to half the logo size. Usually that means making your logo twice as big as it's going to be displayed.
+
+#### I Want To Change The Colours. Teach Me!
+
+Well aren't you adventurous! I've made it fairly simple to change the colours by using SASS variables. Ok, here we go. Open up **assets/sass/screen.scss** and take a look at lines 4-11. You should see something that looks like this:
+
+    /*--Colours--*/
+    $bodybg: #f3f3f3;
+    $containerbg: #f8f8f8;
+    $bodytext: #444;
+    $accent: #fb8b5f;
+    $headerTopColour: #fc8a5f;
+    $headerBottomColour: #fabd65;
+    /*--End Colours--*/
+
+You can go ahead and change the **values** of these variables. Please don't change the names, or bad things will happen. Now do a 'Select All' on the entire document and copy it to the clipboard. Now go to <http://c2c.briangonzalez.org> and paste the code in left pane and click Compile. It will spit out a bunch of code on the right. Select all that code, go back to your project, and open up **assets/stylesheets/screen.css** and paste in the code, and save it. Upon refresh, you should see your new colours. Whew.
+
+#### Image Formatting
+
+##### Header Image
+
+Each blog post can have a header image - a full-width image that is at the top of a post. To include a header image, simply specify a **headerimage** field in your template file, or if you're the panel simply write a kirbytext link to the image. See the sample post "**The Sky Is The Limit**" for an example of using a header image.
+
+##### Floated Images
+
+Floating an image either left or write in your posts is super simple. Just add a **left** or **right** class to your kirbytext image tag. You can see an example on the sample **about** page
+
+#### License
+
+This theme is **free to use for personal or commercial projects**. However, please note the Kirby CMS is **not free**, and you must (link: https://sites.fastspring.com/openwe/instant/kirby text: buy a license) in order to use Kirby in a production environment. If you would like to throw me a few bucks for the theme, you can do so (link: https://paycollin.herokuapp.com text: here).
+
+#### Questions?
+
+Have a question regarding the theme? Feature requests? Bugs? Feel free to (email: collin@syropia.net email me) or ping me on Twitter (twitter: @syropian).

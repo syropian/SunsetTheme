@@ -100,6 +100,14 @@ body {
 	#posts {
 		max-width: $containerwidth - 160;
 		margin: 0 auto;
+
+		a {
+			color: $accent;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
 		.post {
 			margin-bottom: 50px;
 			h3.post-title { 
@@ -133,16 +141,10 @@ body {
 			p {
 				font-family: 'Fenix', 'Times', serif;
 				font-size: 18px;
-				line-height: 24px;
+				line-height: 28px;
 				color: lighten($bodytext, 15%);
 				margin: 20px 0;
-				a {
-					color: $accent;
-					&:hover {
-						text-decoration: none;
-					}
-				}
-
+				
 				img {
 					max-width: 100%;
 					height: auto;
@@ -178,6 +180,9 @@ body {
 				color: lighten($bodytext, 15%);
 				margin: 20px 0;
 				margin-left: 40px;
+				li {
+					margin: 10px 0;
+				}
 			}
 			ul {
 				list-style-type: square;
@@ -218,13 +223,6 @@ body {
 					padding: 0 8px;
 				}
 				&:hover { opacity: 1; }
-			}
-		}
-
-		.next, .prev {
-			color: $accent;
-			&:hover {
-				text-decoration: none;
 			}
 		}
 
